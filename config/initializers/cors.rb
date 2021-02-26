@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://cassymarie.github.io/let-it-go_fe/'
+    origins '*'
 
     resource '*',
       headers: :any,
